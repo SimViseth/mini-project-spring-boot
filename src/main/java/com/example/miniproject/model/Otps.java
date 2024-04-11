@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -12,8 +13,8 @@ import java.sql.Timestamp;
 public class Otps {
     private Integer optId;
     private String optCode;
-    private Timestamp issued_at;
-    private Timestamp expiration;
+    private LocalDateTime issued_at;
+    private LocalDateTime expiration;
     private Boolean verify;
     private Users users;
 }

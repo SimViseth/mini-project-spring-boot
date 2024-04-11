@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -13,6 +14,6 @@ public class Expenses {
     private Integer expenseId;
     private int amount;
     private String description;
-    private Timestamp date;
+    private LocalDateTime date;
     private Categories categories;
 }
